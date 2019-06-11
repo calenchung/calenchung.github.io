@@ -167,7 +167,55 @@
 
 </div>
 
+<!-- Outspector -->
+<div class="row">
+			<div class="column-title">
+					<button class="collapsible" id="a"><span>Outspector</span><img src="images/outspector/cap1.png" class="hide"></button>
+						<div class="content">
+							<div id="slideshow3" class="slideshow-container inner-content image">
 
+							<div class="mySlides fade">
+								<video width="400" controls>
+							  <source src="images/outspector/outspector.mp4" type="video/mp4">
+							</video>
+								<div class="numbertext">1 / 1</div>
+							</div>
+
+							<a class="prev" onclick="plusSlides(-1,slideshow3)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+
+							</div>
+
+							<div class="inner-content">
+								<p class="text">Outpsector <br><br>
+									This is a type specimen book for the typeface IBM Plex Monospace. The book was to be in the form of a classic computer manual. The final book has 25 pages filled with differing layouts and imagery. Each page features a different aspect of the typeface.
+								<br><br>
+								I really wanted to draw attention to the shapes of the letters. The geometric shapes of the monospace make the typeface almost pictographic. I believed that the book didn't need any illustrations for the letters were beautiful as imagery in themselves. ​​​​​​​
+								<br><br>
+								There wasn't a need for chapter dividers; however, there were clear distinctions of sections in the book. I separated it by glyphs, forms, and numerals. While I didn't want to put formal chapter dividers I instead decided to use spreads that related to the oncoming content. For example a calculator signals the beginning of the Numerals section of the book.<br><br>
+								</p>
+							</div>
+							<div class="inner-content">
+								<p class="text"><br><br>Printed on the risograph with cornflower blue and pink. ​​
+								<br><br>
+								Please note that the scans are slightly yellow! While the photos are edited I did not want to take away from the natural color of the Risograph ink</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column-title">
+					<p class="data">Web/Bookmarklet</p>
+					</div>
+
+					<div class="column-title">
+					<p class="data">HTML/CSS/JS</p>
+					</div>
+
+					<div class="column-title last">
+					<p class="data">2019</p>
+					</div>
+
+</div>
 
 
 
@@ -184,6 +232,10 @@ slideshow1.currentSlideIndex = 1;
 showSlides(slideshow1.currentSlideIndex, slideshow1);
 
 var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+var slideshow3 = document.getElementById("slideshow2");
 slideshow2.currentSlideIndex = 1;
 showSlides(slideshow2.currentSlideIndex, slideshow2);
 
