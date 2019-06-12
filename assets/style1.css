@@ -27,6 +27,7 @@ body {
 
 .work {
   margin-top: 10vw;
+  margin-bottom: 10vw;
 }
 
 a {
@@ -37,18 +38,18 @@ a {
 }
 
 a:hover {
-  color: blue;
+  color: #1d12ff;
 }
 
 h1 {
   font-weight:normal;
   font-family: "America-Regular";
   margin-top: -2vw;
-  width: 75%;
+  width: 85%;
   padding-bottom: 50px;
-  font-size: 53px;
-  line-height: 65px;
-  letter-spacing: -1px;
+  font-size: 7vw;
+  line-height: 7.5vw;
+  letter-spacing: -.25vw;
 }
 
 h2 {
@@ -112,7 +113,7 @@ h2 {
 }
 
 .collapsible:hover {
-  color: blue;
+  color: #1d12ff;
 }
 
 .content {
@@ -214,8 +215,39 @@ button:focus {outline:0;}
 }
 
 .circle:hover {
-  background-color: blue;
+  background-color: #1d12ff;
 }
+
+
+.spon::after {
+  content: attr(data-info);
+  display: block;
+  position: absolute;
+  opacity: 0;
+  width: 33vw;
+  margin-top: 22vw;
+  margin-left: 28vw;
+  font-size: 3.5vw;
+  color: white;
+  padding: 0.5em 0.8em;
+  background: rgba(255,13,106,0.9);
+  pointer-events: none;
+}
+.spon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px; left: 20px;
+  opacity: 0;
+  width: 0; height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(255,255,255,0.9);
+}
+.spon:hover {z-index: 2; color: white;}
+.spon:hover::after,
+.spon:hover::before {opacity: 1;}
+.spon:hover::after {top: 30px;}
+.spon:hover::before {top: 20px;}
 
 
 /* ================================ */
