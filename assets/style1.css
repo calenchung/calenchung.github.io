@@ -201,7 +201,47 @@ button:focus {outline:0;}
 
 /* ================================ */
 
+.dropbtn {
+  border-radius: 50%;
+  width: 40px;
+  height:40px;
+  background-color: black;
+  margin: 4vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 3.5vw;
+  font-size: 15px;
+  right: 0;
+  margin: 3.5vw;
+  min-width: 160px;
+  z-index: 1;
+  text-align: right;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 3px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
 
 
 /* ================================ */
@@ -237,17 +277,15 @@ button:focus {outline:0;}
 /*================================*/
 
 
-
-
-
-@media (max-width: 375px) {
+@media (max-width: 880px) {
 
 body {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 6vw;
+  line-height: 7vw;
 }
 
 .title {
@@ -255,7 +293,8 @@ h1 {
 }
 
 .collapsible {
-  font-size: 10px;
+  font-size: 8px;
+  padding-top:
 }
 
 .input {
