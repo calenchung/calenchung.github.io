@@ -45,6 +45,7 @@ a:hover {
 }
 
 h1 {
+  font-weight:normal;
   font-family: "America-Regular";
   margin-top: -2vw;
   width: 75%;
@@ -162,7 +163,8 @@ button:focus {outline:0;}
 .next {
   font-size: 20px;
   background-color: rgb(0,0,0,0);
-  padding-top: 15px;
+  background-color: none;
+  margin-top: 5rem;
 }
 
 .right {
