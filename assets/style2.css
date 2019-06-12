@@ -10,7 +10,7 @@
 
 
 body {
-  color: #ff0d6a;
+  color: blue;
   font-family: "America-Regular";
   font-size: 15px;
   padding: 5vw;
@@ -31,13 +31,13 @@ body {
 
 a {
   text-decoration: none;
-  color: #ff0d6a;
+  color: blue;
   background-color: white;
   z-index: 20;
 }
 
 a:hover {
-  color: blue;
+  color: #ff0d6a;
 }
 
 h1 {
@@ -67,7 +67,7 @@ h2 {
 .data {
   font-family: "America-Regular";
   border: none;
-  border-bottom: solid #ff0d6a 1px;
+  border-bottom: solid blue 1px;
   padding-top: 8px;
   padding-bottom: 8px;
   text-align: left;
@@ -97,14 +97,14 @@ h2 {
 
 .collapsible {
   font-family: "America-Regular";
-  color: #ff0d6a;
+  color: blue;
   cursor: pointer;
   padding-left: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
   width: 100%;
   border: none;
-  border-bottom: solid #ff0d6a 1px;
+  border-bottom: solid blue 1px;
   text-align: left;
   outline: none;
   font-size: 15px;
@@ -112,14 +112,14 @@ h2 {
 }
 
 .collapsible:hover {
-  color: blue;
+  color: #ff0d6a;
 }
 
 .content {
   display: none;
   overflow: hidden;
   border: none;
-  border-bottom: solid #ff0d6a 1px;
+  border-bottom: solid blue 1px;
   width: 90vw;
 }
 
@@ -203,7 +203,7 @@ button:focus {outline:0;}
   border-radius: 50%;
   width: 40px;
   height:40px;
-  background-color: #ff0d6a;
+  background-color: blue;
   margin: 4vw;
   position: absolute;
   top: 0;
@@ -214,7 +214,7 @@ button:focus {outline:0;}
 }
 
 .circle:hover {
-  background-color: blue;
+  background-color: #ff0d6a;
 }
 
 
