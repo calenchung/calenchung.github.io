@@ -24,11 +24,6 @@ body {
   font-family: "America-Regular";
 }
 
-@font-face {
-  src:url("GT-America-Trial-Medium.otf");
-  font-family: "America-Medium";
-}
-
 .work {
   margin-top: 10vw;
 }
