@@ -45,6 +45,7 @@ a:hover {
 }
 
 h1 {
+  font-family: "America-Regular";
   margin-top: -2vw;
   width: 75%;
   padding-bottom: 50px;
@@ -150,11 +151,6 @@ button:focus {outline:0;}
 
 .first {
   border-left: none;
-}
-
-
-.bold {
-  font-family: "America-Medium";
 }
 
 .main-image {
