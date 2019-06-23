@@ -20,8 +20,13 @@ body {
   background-color: white;
 }
 
-@font-face {
+/* @font-face {
   src:url("GT-America-Trial-Regular.otf");
+  font-family: "America-Regular";
+} */
+
+@font-face {
+  src:url("FavoritTrialPro-Medium.woff");
   font-family: "America-Regular";
 }
 
@@ -303,27 +308,47 @@ button:focus {outline:0;}
 @media (max-width: 880px) {
 
 body {
-  font-size: 8px;
+  font-size: 4vw;
+}
+
+.circle {
+  width: 5vw;
+  height: 5vw;
 }
 
 h1 {
-  font-size: 6vw;
-  line-height: 7vw;
+  font-size: 12vw;
+  line-height: 12vw;
+}
+
+.data {
+  display: none;
 }
 
 .title {
-  font-size: 10px;
+  font-size: 4vw;
 }
 
+span:hover + .hide {
+ display: none;
+}
 .collapsible {
-  font-size: 8px;
-  padding-top:
+  font-size: 5vw;
+  width: 90vw;
 }
 
 .input {
-  font-size: 10px;
+  font-size: 4vw;
 }
 
 .inner-content {
-  font-size: 8px;
+  font-size: 4vw;
+  width: 100%;
+}
+
+.spon::after {
+  width: 80vw;
+  margin: auto;
+  margin-top: 35vh;
+  font-size: 7vw;
 }

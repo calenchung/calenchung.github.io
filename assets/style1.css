@@ -10,15 +10,19 @@
 
 
 body {
-  color: #ff0d6a;
+  color: #151515;
   font-family: "America-Regular";
   font-size: 15px;
   padding: 5vw;
   max-width: 100%;
   overflow-x: hidden;
   padding-bottom: 5vw;
-  background-color: white;
 }
+
+/* @font-face {
+  src:url("GT-America-Trial-Regular.otf");
+  font-family: "America-Regular";
+} */
 
 @font-face {
   src:url("GT-America-Trial-Regular.otf");
@@ -26,37 +30,43 @@ body {
 }
 
 .work {
-  margin-top: 10vw;
   margin-bottom: 10vw;
 }
 
 a {
   text-decoration: none;
-  color: #ff0d6a;
+  color: #151515;
   background-color: white;
   z-index: 20;
 }
 
 a:hover {
-  color: #1d12ff;
+  color: red;
 }
 
 h1 {
   font-weight:normal;
   font-family: "America-Regular";
-  margin-top: -2vw;
-  width: 85%;
-  padding-bottom: 50px;
-  font-size: 7vw;
-  line-height: 7.5vw;
-  letter-spacing: -.25vw;
+  width:100%;
+  top: 0;
+  left: 0;
+  font-size: 80px;
+  line-height: 0;
+  padding-bottom: 60px;
+  border-bottom: solid black 2px;
 }
 
 h2 {
-  margin-top: 40px;
-	padding-bottom: 10px;
+  left: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-weight:normal;
+  font-family: "America-Regular";
+  width:100%;
+  font-size: 30px;
+  line-height: 35px;
+  border-bottom: solid black 2px;
 }
-
 
 .title {
   font-size: 15px;
@@ -68,16 +78,18 @@ h2 {
 .data {
   font-family: "America-Regular";
   border: none;
-  border-bottom: solid #ff0d6a 1px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  border-bottom: solid #151515 2px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   text-align: left;
+  font-size: 30px;
+
 }
 
 
 .column-title {
   float: left;
-  width: 31.66%;
+  width: 47.5%;
   padding: 0px;
 }
 
@@ -98,29 +110,29 @@ h2 {
 
 .collapsible {
   font-family: "America-Regular";
-  color: #ff0d6a;
+  color: #151515;
   cursor: pointer;
   padding-left: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   width: 100%;
   border: none;
-  border-bottom: solid #ff0d6a 1px;
+  border-bottom: solid #151515 2px;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 30px;
   background-color: white;
 }
 
 .collapsible:hover {
-  color: #1d12ff;
+  color: red;
 }
 
 .content {
   display: none;
   overflow: hidden;
   border: none;
-  border-bottom: solid #ff0d6a 1px;
+  border-bottom: solid #151515 1px;
   width: 90vw;
 }
 
@@ -172,14 +184,14 @@ button:focus {outline:0;}
 	display: none;
 	height: 10vw;
  }
-
+/*
  span:hover + .hide {
 	display: block;
 	position: absolute;
 	margin-left: 10%;
   margin-top: -50px;
 	z-index: 1;
- }
+ } */
 
  .help {
  	display: none;
@@ -204,8 +216,9 @@ button:focus {outline:0;}
   border-radius: 50%;
   width: 40px;
   height:40px;
-  background-color: #ff0d6a;
-  margin: 4vw;
+  background-color: #151515;
+  margin: 5vw;
+  margin-top: 6vw;
   position: absolute;
   top: 0;
   right: 0;
@@ -218,36 +231,9 @@ button:focus {outline:0;}
   background-color: #1d12ff;
 }
 
+/* ================================ */
 
-.spon::after {
-  content: attr(data-info);
-  display: block;
-  position: absolute;
-  opacity: 0;
-  width: 33vw;
-  margin-top: 22vw;
-  margin-left: 28vw;
-  font-size: 3.5vw;
-  color: white;
-  padding: 0.5em 0.8em;
-  background: rgba(255,13,106,0.9);
-  pointer-events: none;
-}
-.spon::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 12px; left: 20px;
-  opacity: 0;
-  width: 0; height: 0;
-  border: solid transparent 5px;
-  border-bottom-color: rgba(255,255,255,0.9);
-}
-.spon:hover {z-index: 2; color: white;}
-.spon:hover::after,
-.spon:hover::before {opacity: 1;}
-.spon:hover::after {top: 30px;}
-.spon:hover::before {top: 20px;}
+
 
 
 /* ================================ */
@@ -286,27 +272,47 @@ button:focus {outline:0;}
 @media (max-width: 880px) {
 
 body {
-  font-size: 8px;
+  font-size: 4vw;
+}
+
+.circle {
+  width: 5vw;
+  height: 5vw;
 }
 
 h1 {
-  font-size: 6vw;
-  line-height: 7vw;
+  font-size: 12vw;
+  line-height: 12vw;
+}
+
+.data {
+  display: none;
 }
 
 .title {
-  font-size: 10px;
+  font-size: 4vw;
 }
 
+span:hover + .hide {
+ display: none;
+}
 .collapsible {
-  font-size: 8px;
-  padding-top:
+  font-size: 5vw;
+  width: 90vw;
 }
 
 .input {
-  font-size: 10px;
+  font-size: 4vw;
 }
 
 .inner-content {
-  font-size: 8px;
+  font-size: 4vw;
+  width: 100%;
+}
+
+.spon::after {
+  width: 80vw;
+  margin: auto;
+  margin-top: 35vh;
+  font-size: 7vw;
 }
