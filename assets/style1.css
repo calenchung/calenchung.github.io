@@ -29,9 +29,6 @@ body {
   font-family: "America-Regular";
 }
 
-.work {
-  margin-bottom: 10vw;
-}
 
 a {
   text-decoration: none;
@@ -65,7 +62,16 @@ h2 {
   width:100%;
   font-size: 30px;
   line-height: 35px;
-  border-bottom: solid black 2px;
+}
+
+.footer {
+  border-top: solid black 2px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.indent {
+  padding-left: 30px;
 }
 
 .title {
@@ -78,7 +84,7 @@ h2 {
 .data {
   font-family: "America-Regular";
   border: none;
-  border-bottom: solid #151515 2px;
+  border-top: solid #151515 2px;
   padding-top: 18px;
   padding-bottom: 18px;
   text-align: left;
@@ -112,12 +118,11 @@ h2 {
   font-family: "America-Regular";
   color: #151515;
   cursor: pointer;
-  padding-left: 8px;
   padding-top: 18px;
   padding-bottom: 18px;
   width: 100%;
   border: none;
-  border-bottom: solid #151515 2px;
+  border-top: solid #151515 2px;
   text-align: left;
   outline: none;
   font-size: 30px;
@@ -132,13 +137,13 @@ h2 {
   display: none;
   overflow: hidden;
   border: none;
-  border-bottom: solid #151515 1px;
+  border-bottom: solid #151515 2px;
   width: 90vw;
 }
 
 .inner-content {
   float: left;
-  width: 31.66%;
+  width: 47.5%;
 }
 
 .inner-content, .image {
@@ -157,6 +162,8 @@ button:focus {outline:0;}
   text-align: left;
   margin-top: 5px;
   width: 95%;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .first {
