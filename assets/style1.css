@@ -49,6 +49,7 @@ h1 {
   left: 0;
   font-size: 80px;
   line-height: 0;
+  margin-top: 1vw;
   padding-bottom: 60px;
   border-bottom: solid black 2px;
 }
@@ -192,14 +193,7 @@ button:focus {outline:0;}
 	display: none;
 	height: 10vw;
  }
-/*
- span:hover + .hide {
-	display: block;
-	position: absolute;
-	margin-left: 10%;
-  margin-top: -50px;
-	z-index: 1;
- } */
+
 
  .help {
  	display: none;
@@ -290,7 +284,19 @@ body {
 
 h1 {
   font-size: 12vw;
+  margin: 0;
+  padding-bottom:9vw;
   margin-top: 5vw;
+
+}
+
+h2 {
+  font-size: 5vw;
+  line-height: 6vw;
+  margin:0;
+  padding:0;
+  padding-bottom:6vw;
+  padding-top:5vw;
 }
 
 .data {
