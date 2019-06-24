@@ -38,7 +38,8 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: transparent;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 
 h1 {
@@ -73,7 +74,7 @@ h2 {
 }
 
 .indent {
-  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .title {
@@ -132,8 +133,9 @@ h2 {
 }
 
 .collapsible:hover {
-  color: red;
-}
+  color: transparent;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  }
 
 .content {
   display: none;
@@ -214,29 +216,30 @@ button:focus {outline:0;}
 
 /* ================================ */
 
-.icon { height: 70px; float: right;}
-.hi {
-	display: none;
- }
+.icon2 { height: 50px; float: right;}
 
- span:hover + .hi {
-	display: block;
-  position: absolute;
-  margin-top: -4rem;
-  right: 4em;
-	z-index: 1;
- }
+.icon2:hover {
+  filter:blur(2px);
+}
 
 /* ================================ */
 
-.resume {
-    margin: -2vw;
+.resume-text {
+    width: 35rem;
+    margin: 0vw;
+    margin-top: -1vw;
     padding:0;
     padding-bottom: 5px;
-    width:50%;
-    font-size: 25px;
-    line-height: 30px; */
+    font-size: 1.3rem;
+    line-height:1.65rem;
   }
+
+.big-icon {
+  position: fixed;
+  bottom: 5vw;
+  right: 5vw;
+  width: 50px;
+}
 
 /* ================================ */
 
@@ -333,4 +336,17 @@ span:hover + .hide {
 
 span:hover + .hi {
  right: 3em;
+}
+
+.resume-text {
+    margin: -2vw;
+    padding:0;
+    padding-bottom: 5px;
+    width:100%;
+    font-size: 4vw;
+    line-height:5vw;
+  }
+
+.big-icon {
+  display: none;
 }
