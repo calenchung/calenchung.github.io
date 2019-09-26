@@ -77,8 +77,6 @@ CALEN CHUNG
 
 								<div class="w3-content w3-display-container slider inner-content image" id="div-a">
 
-
-
 									<a class="next" onclick="plusDivs(this,-1)">&#10094;</a>
 									<a class="right" onclick="plusDivs(this,1)">&#10095;</a>
 
@@ -97,10 +95,22 @@ CALEN CHUNG
 									<img class="mySlides short" src="images/museum/final-pdf.png" style="width:100%">
 								</div>
 
-
-
-
+								<div class="mySlides fade" id="videoPanel">
+										<video id="myVideo" width="100%" src="images/museum/museum-trailer-FINAL.mp4"></video>
+										<div id="controls" class="controls">
+												<table border="0">
+														<tr>
+															<td width="30%">
+																	<img src="play-btn-01.svg" onclick="playOrPause()" id="playBtn"/>
+															</td>
+														</tr>
+												</table>
+										</div>
 								</div>
+
+
+
+							</div>
 
 
 
@@ -140,6 +150,9 @@ CALEN CHUNG
 							<div class="content">
 								<div class="w3-content w3-display-container slider inner-content image" id="div2">
 
+									<a class="next" onclick="plusDivs(this,-1)">&#10094;</a>
+								  <a class="next right" onclick="plusDivs(this,1)">&#10095;</a>
+
 								  <img class="mySlides" src="images/ibmplex/scan.png" style="width:100%">
 								  <img class="mySlides" src="images/ibmplex/scan2.png" style="width:100%">
 								  <img class="mySlides" src="images/ibmplex/scan4.png" style="width:100%">
@@ -151,8 +164,6 @@ CALEN CHUNG
 									<img class="mySlides" src="images/ibmplex/scan19.png" style="width:100%">
 									<img class="mySlides" src="images/ibmplex/scan20.png" style="width:100%">
 
-								<a class="next" onclick="plusDivs(this,-1)">&#10094;</a>
-							  <a class="next right" onclick="plusDivs(this,1)">&#10095;</a>
 
 								</div>
 
@@ -191,13 +202,13 @@ CALEN CHUNG
 							<div class="content">
 
 								<div id="slideshow2" class="slideshow-container inner-content image">
-									<div class="mySlides fade" id="videoPanel">
+									<div class="mySlides fade outline-vid" id="videoPanel">
 											<video id="myVideo2" width="100%" src="images/outspector/outspector.mp4"></video>
 											<div id="controls" class="controls">
 													<table border="0">
 															<tr>
 																<td width="30%">
-																		<img src="play-btn-01.svg" onclick="play2Pause()" id="playBtn"/>
+																		<img src="play-btn-010.svg" onclick="play3Pause()" id="playBtn2"/>
 																</td>
 															</tr>
 													</table>
@@ -255,14 +266,14 @@ CALEN CHUNG
 
 								<div class="w3-content w3-display-container slider inner-content image" id="div1">
 
+									<a class="next" onclick="plusDivs(this,-1)">&#10094;</a>
+									<a class="next right" onclick="plusDivs(this,1)">&#10095;</a>
+
 									<div class="tall">
 										<img class="mySlides" src="images/36days/letter-a.png" style="width:100%">
 									  <img class="mySlides" src="images/36days/LetterB.png" style="width:100%">
 									  <img class="mySlides" src="images/36days/LetterC.png" style="width:100%">
 									</div>
-
-										<a class="next" onclick="plusDivs(this,-1)">&#10094;</a>
-									  <a class="next right" onclick="plusDivs(this,1)">&#10095;</a>
 
 								</div>
 								<br>
@@ -294,7 +305,11 @@ CALEN CHUNG
 				<div class="column-title">
 						<button class="collapsible" id="a"><span>Recipe Book</span><img src="images/recipebook/c.png" class="hide"></button>
 							<div class="content">
-								<div class="w3-content w3-display-container slider inner-content image" id="div4">
+								<div class="w3-content w3-display-container slider inner-content image" id="div5">
+
+									<a class="next" onclick="plusDivs(this,-1)">&#10094;</a>
+									<a class="next right" onclick="plusDivs(this,1)">&#10095;</a>
+
 
 									<img class="mySlides" src="images/recipebook/front1.jpeg" style="width:100%">
 									<img class="mySlides" src="images/recipebook/front2.jpeg" style="width:100%">
@@ -304,9 +319,6 @@ CALEN CHUNG
 									<img class="mySlides" src="images/recipebook/d.png" style="width:100%">
 									<img class="mySlides" src="images/recipebook/e.png" style="width:100%">
 									<img class="mySlides" src="images/recipebook/f.png" style="width:100%">
-
-									<a class="next" onclick="plusDivs(this,-1)">&#10094;</a>
-									<a class="next right" onclick="plusDivs(this,1)">&#10095;</a>
 
 								</div>
 
@@ -320,10 +332,6 @@ CALEN CHUNG
 							</div>
 						</div>
 
-						<!-- <div class="column-title">
-						<p class="data">Book</p>
-						</div> -->
-
 						<div class="column-title">
 						<p class="data">Inkjet</p>
 						</div>
@@ -335,7 +343,7 @@ CALEN CHUNG
 	</div>
 
 	<!-- Synergy Branding -->
-	<div class="row">
+	<!-- <div class="row">
 				<div class="column-title">
 						<button class="collapsible" id="a"><span>Synergy</span><img src="images/synergy/businesscarsd.png" class="hide"></button>
 							<div class="content">
@@ -362,10 +370,6 @@ CALEN CHUNG
 							</div>
 						</div>
 
-						<!-- <div class="column-title">
-						<p class="data">Branding</p>
-						</div> -->
-
 						<div class="column-title">
 						<p class="data">Illustrator</p>
 						</div>
@@ -374,10 +378,10 @@ CALEN CHUNG
 						<p class="data">2018</p>
 						</div>
 
-	</div>
+	</div> -->
 
 	</div>
-	</div>
+	<div>
 	<h2 class="footer">
 	<span class="indent">CALENCHUNG@GMAIL.COM</span>
 	<a href="https://instagram.com/chungcalen" target="_blank" class="indent">INSTAGRAM</a>
