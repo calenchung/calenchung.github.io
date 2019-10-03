@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="What creates our visual perception of a hand?">
+		<meta name="keywords" content="Hands,Final,Correlation">
+		<meta name="author" content="Calen Chung">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calen Chung</title>
+		<script src="../assets/jquery.js"></script>
+    <script src="../assets/scripts2.js"></script>
+		<link href="../assets/style1.css" rel="stylesheet">
+		<link rel="icon" href="../images/icon.png" type="image" sizes="16x16">
+	</head>
+	<body>
+<!-- <a href="blue.html"><div class="circle"></div></a> -->
+
+<h1>
+CALEN CHUNG
+</h1>
+<h2>
+ is a practicing multi-disciplinary designer living and working in NYC. She is currently getting her BFA in Communication Design at Parsons The New School for Design. Her strengths include typography, video animation, and Ui/Ux Design. Feel free to contact her if any of her work interests you.
+</h2>
+
+<div class="in-depth">
+
+<p>Museum of Moving Parts</p>
+
+</div>
+
+	<div>
+	<h2 class="footer">
+	<span class="indent">CALENCHUNG@GMAIL.COM</span>
+	<a href="https://instagram.com/chungcalen" target="_blank" class="indent">INSTAGRAM</a>
+	<a href="https://www.are.na/calen-chung" target="_blank" class="indent">ARE.NA</a>
+	<a href="https://github.com/calenchung" target="_blank" class="indent">GITHUB</a>
+	<a href="https://calenchung.design/interaction-spring/" target="_blank" class="indent">WEB PROJECTS</a>
+	<div class="icon2">
+	<a href="resume.html"><img src="../images/icon-high.jpg" class="icon2"></a>
+	</div>
+	</h2>
+
+<!-- SCRIPTS -->
+<script>
+var sliderObjects = [];
+createSliderObjects();
+
+function plusDivs(obj, n) {
+  var parentDiv = $(obj).parent();
+  var matchedDiv;
+  $.each(sliderObjects, function(i, item) {
+    if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
+      matchedDiv = item;
+      return false;
+    }
+  });
+  matchedDiv.slideIndex=matchedDiv.slideIndex+n;
+  showDivs(matchedDiv, matchedDiv.slideIndex);
+}
+
+function createSliderObjects() {
+  var sliderDivs = $('.slider');
+  $.each(sliderDivs, function(i, item) {
+    var obj = {};
+    obj.id = $(item).attr('id');
+    obj.divContent = item;
+    obj.slideIndex = 1;
+    obj.slideContents = $(item).find('.mySlides');
+    showDivs(obj, 1);
+    sliderObjects.push(obj);
+  });
+}
+
+function showDivs(divObject, n) {
+  debugger;
+  var i;
+  if (n > divObject.slideContents.length) {
+    divObject.slideIndex = 1
+  }
+  if (n < 1) {
+    divObject.slideIndex = divObject.slideContents.length
+  }
+  for (i = 0; i < divObject.slideContents.length; i++) {
+    divObject.slideContents[i].style.display = "none";
+  }
+  divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
+}
+</script>
+
+
+</body>
+
+<script src="scripts3.js"></script>
+
+
+
+</html>

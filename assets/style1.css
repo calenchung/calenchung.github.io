@@ -234,6 +234,26 @@ button:focus {outline:0;}
     width: 40%;
 }
 
+.depth {
+  font-size: 30px;
+  padding: 10px;
+  border: solid black 1px;
+  width: 201px;
+  height: 53px;
+  left: 816px;
+  top: 247px;
+  border-radius: 32px;
+}
+
+.in-depth {
+  width: 100%;
+  border-top: solid black 2px;
+  font-size: 5vw;
+  margin:0;
+  padding:0;
+  padding-bottom:6vw;
+}
+
 
 
 /* ================================ */
