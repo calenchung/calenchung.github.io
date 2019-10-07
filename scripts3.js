@@ -32,10 +32,10 @@ function play3Pause(){
 
     if(vid3.paused){
         vid3.play();
-        $("#playBtn2").attr("src","pause-btn-020.svg");
+        $("#playBtn3").attr("src","pause-btn-020.svg");
     }
     else{
         vid3.pause();
-        $("#playBtn2").attr("src","play-btn-010.svg");
+        $("#playBtn3").attr("src","play-btn-010.svg");
     }
 }
