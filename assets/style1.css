@@ -34,12 +34,15 @@ a {
   text-decoration: none;
   color: #151515;
   background-color: white;
-  z-index: 20;
+  z-index: 200;
+  cursor: pointer;
 }
 
 a:hover {
   color: transparent;
   text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  cursor: pointer;
+
 }
 
 h1 {
@@ -130,11 +133,14 @@ h2 {
   outline: none;
   font-size: 30px;
   background-color: white;
+  z-index: 100;
 }
 
 .collapsible:hover {
   color: transparent;
   text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  z-index: 100;
+
   }
 
 .content {
