@@ -255,9 +255,9 @@ button:focus {outline:0;}
   padding: 10px;
   border: solid black 1px;
   width: 201px;
-  height: 53px;
+  height: 100px;
   left: 816px;
-  top: 247px;
+  line-height: 350px;
   border-radius: 32px;
 }
 
