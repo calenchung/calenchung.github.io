@@ -297,12 +297,6 @@ h3 {
 /* ================================ */
 
 
-.hide {
-	display: none;
-	height: 10vw;
- }
-
-
  .help {
  	display: none;
  	width: 200px;
@@ -311,8 +305,8 @@ h3 {
   span:hover + .help {
  	display: block;
  	position: absolute;
- 	margin-left: 150px;
-  margin-top: -90px;
+ 	margin-left: 25vw;
+  margin-top: -5vw;
  	z-index: 100;
   }
 
