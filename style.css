@@ -62,14 +62,14 @@ p {
   top: 6vw;
   left: 2vw;
   cursor:pointer;
-  background-image: url("assets/images/calen-header.png");
+  background-image: url("assets/images/calen-home-1.png");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1000;
   display: none;
 }
 #logo-pages:hover{
-  background-image: url("assets/images/calen-header.png");
+  background-image: url("assets/images/calen-home-1.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -80,13 +80,13 @@ p {
   height:7vw;
   top:26vw;
   left: 28.5vw;
-  background-image: url("assets/images/calen-home.png");
+  background-image: url("assets/images/calen-home-1.png");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1000;
 }
 #logo:hover{
-  background-image: url("assets/images/calen-home.png");
+  background-image: url("assets/images/calen-home-1.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -448,13 +448,13 @@ br::selection {
     top: 14vw;
     left: 8vw;
     cursor:pointer;
-    background-image: url("assets/images/calen-header.png");
+    background-image: url("assets/images/calen-home-1.png");
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1000;
   }
   #logoMob:hover{
-    background-image: url("assets/images/calen-header.png");
+    background-image: url("assets/images/calen-home-1.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
