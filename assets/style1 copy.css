@@ -1,0 +1,472 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+
+body {
+  color: #151515;
+  font-family: "America-Regular";
+  font-size: 15px;
+  padding: 5vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 5vw;
+}
+
+/* @font-face {
+  src:url("GT-America-Trial-Regular.otf");
+  font-family: "America-Regular";
+} */
+
+@font-face {
+  src:url("GT-America-Trial-Regular.otf");
+  font-family: "America-Regular";
+}
+
+
+a {
+  text-decoration: none;
+  color: #151515;
+  background-color: white;
+  z-index: 200;
+  cursor: pointer;
+}
+
+a:hover {
+  color: transparent;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  cursor: pointer;
+
+}
+
+h1 {
+  font-weight:normal;
+  font-family: "America-Regular";
+  width:100%;
+  top: 0;
+  left: 0;
+  font-size: 80px;
+  line-height: 0;
+  margin-top: 1vw;
+  padding-bottom: 60px;
+  border-bottom: solid black 2px;
+}
+
+
+h2 {
+  left: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-weight:normal;
+  font-family: "America-Regular";
+  width:100%;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.footer {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.indent {
+  padding-right: 30px;
+}
+
+.title {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 40px;
+	padding-bottom: 10px;
+}
+
+.data {
+  font-family: "America-Regular";
+  border: none;
+  border-top: solid #151515 2px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: left;
+  font-size: 30px;
+
+}
+
+
+.column-title {
+  float: left;
+  width: 47.5%;
+  padding: 0px;
+}
+
+.last {
+  width: 5%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row:hover {
+  background-color: white;
+}
+
+
+.collapsible {
+  font-family: "America-Regular";
+  color: #151515;
+  cursor: pointer;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 100%;
+  border: none;
+  border-top: solid #151515 2px;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  background-color: white;
+  z-index: 100;
+}
+
+.collapsible:hover {
+  color: transparent;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  z-index: 100;
+
+  }
+
+.content {
+  display: none;
+  overflow: hidden;
+  border: none;
+  width: 90vw;
+}
+
+.inner-content {
+  float: left;
+  width: 47.5%;
+}
+
+.tall {
+  position: flex;
+  margin-left:auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.inner-content, .image {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+}
+
+.next {
+  position: relative;
+  float: left;
+  font-size: 50px;
+  bottom: 00;
+  cursor: pointer;
+}
+
+.right {
+  position: relative;
+  float: right;
+  font-size: 50px;
+  top: 40%;
+  cursor: pointer;
+}
+
+.short {
+  margin-top: 30%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.invid {
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+button:focus {outline:0;}
+
+.text {
+  text-align: left;
+  margin-top: 5px;
+  width: 95%;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.first {
+  border-left: none;
+}
+
+.main-image {
+  width: 100%;
+}
+
+#videoPanel {
+  position: relative;
+}
+
+.outline-vid {
+  border: solid black 1px;
+}
+
+#controls{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  width: 40%;
+  flex-wrap: wrap;
+}
+
+#playBtn{
+    cursor: pointer;
+    width: 40%;
+}
+
+#playBtn2{
+    cursor: pointer;
+    width: 40%;
+}
+
+.depth {
+  font-size: 30px;
+  padding: 10px;
+  border: solid black 1px;
+  width: 201px;
+  line-height: 75px;
+  left: 816px;
+  margin-top: 247px;
+  border-radius: 32px;
+}
+
+.in-depth {
+  width: 100%;
+  border-top: solid black 2px;
+  font-size: 5vw;
+  margin:0;
+  padding:0;
+  padding-bottom:6vw;
+}
+
+.hero {
+  padding-top: 2vw;
+}
+
+.center {
+  text-align: center;
+}
+
+.inner2 {
+  margin: auto;
+  width: 80%;
+}
+
+.title1 {
+  color: #2979FF;
+}
+
+.text1 {
+  font-size: 20px;
+}
+
+.section {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+h3 {
+  font-size: 50px;
+  margin:0;
+  padding:0;
+  padding-bottom:2vw;
+  padding-top:5vw;
+}
+
+/* ================================ */
+
+
+ .help {
+ 	display: none;
+ 	width: 200px;
+  }
+
+  span:hover + .help {
+ 	display: block;
+ 	position: absolute;
+ 	margin-left: 25vw;
+  margin-top: -5vw;
+ 	z-index: 100;
+  }
+
+  span:hover + .right{
+  margin-left: -150px;
+  }
+
+/* ================================ */
+
+.icon2 { height: 50px; float: right;}
+
+.icon2:hover {
+  filter:blur(2px);
+}
+
+/* ================================ */
+
+.resume-text {
+    width: 35rem;
+    margin: 0vw;
+    margin-top: -1vw;
+    padding:0;
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+    line-height:1.65rem;
+  }
+
+.big-icon {
+  position: fixed;
+  bottom: 5vw;
+  right: 5vw;
+  width: 50px;
+}
+
+/* ================================ */
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none;
+}
+
+
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1000;
+}
+
+/*================================*/
+
+
+@media (max-width: 880px) {
+
+body {
+  font-size: 4vw;
+}
+
+.circle {
+  width: 5vw;
+  height: 5vw;
+}
+
+h1 {
+  font-size: 12vw;
+  margin: 0;
+  padding-bottom:9vw;
+  margin-top: 5vw;
+
+}
+
+h2 {
+  font-size: 5vw;
+  line-height: 6vw;
+  margin:0;
+  padding:0;
+  padding-bottom:6vw;
+  padding-top:5vw;
+}
+
+.data {
+  display: none;
+}
+
+.title {
+  font-size: 4vw;
+}
+
+span:hover + .hide {
+ display: none;
+}
+.collapsible {
+  font-size: 5vw;
+  width: 90vw;
+}
+
+.input {
+  font-size: 4vw;
+}
+
+.inner-content {
+  font-size: 4vw;
+  width: 100%;
+}
+
+.spon::after {
+  width: 80vw;
+  margin: auto;
+  margin-top: 35vh;
+  font-size: 7vw;
+}
+
+span:hover + .hi {
+ right: 3em;
+}
+
+.resume-text {
+    margin: -2vw;
+    padding:0;
+    padding-bottom: 5px;
+    width:100%;
+    font-size: 4vw;
+    line-height:5vw;
+  }
+
+.big-icon {
+  display: none;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Hi I'm Calen">
+		<meta name="keywords" content="Calen,Chung,Design,Designer">
+		<meta name="author" content="Calen Chung">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calen Chung</title>
+		<script src="assets/jquery.js"></script>
+    <script src="assets/scripts2.js"></script>
+		<link href="assets/style1.css" rel="stylesheet">
+		<link rel="icon" href="images/icon.png" type="image" sizes="16x16">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156924746-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-156924746-1');
+		</script>
+	</head>
+	<body>
+
+<h1>
+	<a href="index.html"> CALEN CHUNG </a>
+</h1>
+
+
+	</div>
+	<div>
+	<h2 class="footer">
+	<a href="mailto:calenchung@gmail.com" target="_blank" class="indent">EMAIL</a>
+	<a href="https://instagram.com/chungcalen" target="_blank" class="indent">IG</a>
+	<a href="https://vimeo.com/calenchung" target="_blank" class="indent">VIMEO</a>
+	<a href="https://www.are.na/calen-chung" target="_blank" class="indent">ARE.NA</a>
+	<a href="https://github.com/calenchung" target="_blank" class="indent">GITHUB</a>
+	<!-- <div class="icon2"><a href="resume.html"><img src="images/icon.png" class="icon2"></a></div> -->
+	</h2>
+
+<!-- SCRIPTS -->
+<script>
+var sliderObjects = [];
+createSliderObjects();
+
+function plusDivs(obj, n) {
+  var parentDiv = $(obj).parent();
+  var matchedDiv;
+  $.each(sliderObjects, function(i, item) {
+    if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
+      matchedDiv = item;
+      return false;
+    }
+  });
+  matchedDiv.slideIndex=matchedDiv.slideIndex+n;
+  showDivs(matchedDiv, matchedDiv.slideIndex);
+}
+
+function createSliderObjects() {
+  var sliderDivs = $('.slider');
+  $.each(sliderDivs, function(i, item) {
+    var obj = {};
+    obj.id = $(item).attr('id');
+    obj.divContent = item;
+    obj.slideIndex = 1;
+    obj.slideContents = $(item).find('.mySlides');
+    showDivs(obj, 1);
+    sliderObjects.push(obj);
+  });
+}
+
+function showDivs(divObject, n) {
+  debugger;
+  var i;
+  if (n > divObject.slideContents.length) {
+    divObject.slideIndex = 1
+  }
+  if (n < 1) {
+    divObject.slideIndex = divObject.slideContents.length
+  }
+  for (i = 0; i < divObject.slideContents.length; i++) {
+    divObject.slideContents[i].style.display = "none";
+  }
+  divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
+}
+</script>
+
+
+</body>
+
+<script src="scripts3.js"></script>
+
+
+
+</html>
