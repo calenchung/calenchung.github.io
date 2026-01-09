@@ -3,17 +3,22 @@
   src: url(assets/PPNeueBit-Regular.otf);
 }
 
+@font-face {
+  font-family: Circular;
+  src: url(assets/CircularStd-Book.otf);
+}
+
 body{
   margin:0;
   padding:0;
-  background-color: black;
+  background-color: white;
   font-family: NeueBit;
   overflow: hidden;
   max-width: 100%;
 }
 
 a {
-  color: #87AC95;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -34,7 +39,7 @@ p {
   font-family: NeueBit;
   position: relative;
   top: 45%;
-  color: white;
+  color: black;
   background-color: none;
   
 }
@@ -62,7 +67,6 @@ p {
   top: 6vw;
   left: 2vw;
   cursor:pointer;
-  background-image: url("assets/images/calen-home-1.png");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1000;
@@ -74,19 +78,21 @@ p {
   background-size: contain;
 }
 
-#logo{
+#header{
   position: absolute;
-  width:42vw;
-  height:7vw;
-  top:26vw;
-  left: 28.5vw;
-  background-image: url("assets/images/calen-home-1.png");
+  width:60vw;
+  height:10vw;
+  top:18vw;
+  left: 20vw;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1000;
+  text-align: center;
+  font-size: 4vw;
+  line-height: 4vw;
+  font-family: Circular;  
 }
-#logo:hover{
-  background-image: url("assets/images/calen-home-1.png");
+#header:hover{
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -101,7 +107,6 @@ button {
   text-decoration: none;
   background: none;
   cursor:pointer;
-  text-shadow: 0 0 10px #000000;
   }
 
   button:hover{
@@ -216,6 +221,8 @@ button {
   display: none;
 }
 
+
+
 #pone {
   padding: 3vw;
   padding-left: 5vw;
@@ -285,6 +292,7 @@ br::selection {
   display: grid;
   grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3%;
   grid-auto-rows: 2fr;
+  background: white;
 }
 
 #content::before {
